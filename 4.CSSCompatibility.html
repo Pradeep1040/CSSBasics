@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+            table-layout: fixed;
+            height: 300px;
+            width: 500px;
+        }
+        .h1
+        {
+            background-color: red;
+        }
+        .cl
+        {
+            background-color: gold;
+        }
+        ul
+        {
+            /*list-style-type:upper-roman;*/
+            list-style-position: inside;
+            /*list-style-image: url(./Rescorce/Image/logo_1.png);*/
+           list-style-image:linear-gradient(red,yellow,blue)
+           
+        }
+
+        /*Create grid*/
+        .item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* create hero image*/
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Rescorce/Image/road.jpg.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Style for Table</h1>
+    <table border="5" >
+        <tr>
+            <th class="h1">Heading</th>
+            <th>Heading</th>
+            <th>Heading</th>
+            <th>Heading</th>
+        </tr>
+        <tr>
+            <th>Heading</th>
+            <td> data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+
+        <tr>
+            <th>Heading</th>
+            <td> data</td>
+            <td class="cl">data</td>
+            <td>data</td>
+        </tr>
+
+        <tr>
+            <th>Heading</th>
+            <td> data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+    </table><br><br><br>
+    <h1>1.Un-ordered List</h1>
+    <!---Attributes-->
+    <!--type -->
+    <!--disc(DEFAULT)-->
+    <!---square-->
+    <!--circle-->
+    <!--none-->
+    <ul type="Square">
+        <li>Java</li>  
+        <li>Web Tech</li>
+        <li>SQL</li>
+        <li>adv.Java</li>
+    </ul>
+    <ul type="Circle">
+        <li>Java</li>  
+        <li>Web Tech</li>
+        <li>SQL</li>
+        <li>adv.Java</li>
+    </ul>
+    <ul type="Disc">
+        <li>Java</li>  
+        <li>Web Tech</li>
+        <li>SQL</li>
+        <li>adv.Java</li>
+    </ul>
+    <ul type="none">
+        <li>Java</li>  
+        <li>Web Tech</li>
+        <li>SQL</li>
+        <li>adv.Java</li>
+    </ul>
+
+    <h1>Create a grid</h1>
+    <h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Main</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>
+
+<h1>Hero image</h1>
+<div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">I am Pradeep</h1>
+      <p>And I'm a software engg.</p>
+      <button>Hire me</button>
+    </div>
+  </div>
+  
+  <p>Page Content..</p>
+
+
+</body>
+</html>

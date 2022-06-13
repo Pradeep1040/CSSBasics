@@ -1,0 +1,55 @@
+*
+{
+   background-image: url(./Rescorce/Image/nature.jpg.jpg);
+    
+}
+.h1
+{
+    visibility: visible;
+    display: none;
+    display: inline;
+    display: block;
+}
+.para
+{
+    visibility: collapse;
+    display: contents;
+
+}
+.abc
+{
+   background-color: aqua;
+    display: list-item;
+}
+.Container
+{
+    border: solid 3px black;
+    margin: 100px ;
+    height: 150px;
+    width: 300px;
+    background-color: aqua;
+    display:inline-block;
+    background-image: url(./Rescorce/Image/parrot.jpg.jpg);
+
+}
+.abb
+{
+  border: solid 2px black;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 100px;
+  padding-right: 300px;
+  background-image: url(./Rescorce/Image/road.jpg.jpg);
+  margin-left: 280px;
+}
+.contain
+{
+    border: solid 3px black;
+    margin: 200px ;
+    height: 100px;
+    width: 100px;
+   background-image: url(./Rescorce/Image/download.jpg);
+    
+    
+}

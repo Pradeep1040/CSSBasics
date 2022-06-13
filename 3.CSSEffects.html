@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Square
+        {
+            border: solid 2px rgb(206, 189, 189);
+            height: 200px;
+            width: 300px;
+            box-shadow: 10px 20px 5px rgb(10, 231, 39);
+           overflow: scroll;
+           position: relative;
+        
+
+        }
+        img
+        {
+            opacity: 0.8;
+        }
+        .Sqr
+        {
+            border: solid 2px black;
+            height: 400px;
+            width: 400px;
+           background-image: url(./Resorce/Image/wallpaperflare.com_wallpaper\ \(4\).jpg);
+            margin: 40px 200px;
+           background-size: cover;
+
+            animation-name: Animation-1;
+            animation-duration:3s;
+            animation-iteration-count:infinite;
+            animation-delay: 1s;
+            
+
+        }
+
+        @keyframes Animation-1 
+        {
+         from
+         {
+            background-image: url(./Rescorce/Image/road.jpg.jpg);
+         }
+         to
+         {
+            background-image: url(./Rescorce/Image/sky.jpg.jpg);
+         }
+        
+        }
+    </style>
+</head>
+<body>
+   <div class="Square"><img src="./Rescorce/Image/nature.jpg.jpg" alt=""></div> 
+
+   <br><br>
+   <p>Image with 50% opacity:</p>
+   <img src="./Rescorce/Image/bridge.jpg.jpg" alt="bridge" height="300" width="500">
+  <br><br>
+   <h1>Animation</h1>
+    <h2>Box</h2>
+    <div class="Sqr"></div>
+</body>
+</html>
